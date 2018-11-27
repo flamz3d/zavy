@@ -1,0 +1,12 @@
+{
+  "name": "zavy",
+  "version": "1.0.0",
+  "description": "Simple app to learn how to read",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "spellchecker": "3.5.0"
+  },
+  "author": "Dominic Laflamme",
+  "license": "MIT"
+}

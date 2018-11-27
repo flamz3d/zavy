@@ -1,0 +1,54 @@
+<div class="modal fade" id="add_object_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New Smart Object Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Name your object</p>
+                <input id="object_name" class="form-control" type="text" placeholder="eg. 'excalibur'">
+                <hr>
+                <div id="categories" style="display: none">
+                    <p>Specify Categories</p>
+                    <input id="object_isa" class="form-control" type="text"/>
+
+                    <p></p>
+                    <div class="loading" style="display:none"><img src="loading_transparent.gif" style="width:24px; height: auto;"></div>
+                    <div id="object_suggestions">
+
+                    </div>
+                </div>
+
+                <p></p>
+                <p></p>
+                <div id="definition" class="alert alert-dismissible alert-secondary" style="display: none">
+                    <strong>Knowledge Graph Definition</strong>
+                    <p></p>
+                    <span id="existing_definition" style=" word-wrap: break-word; font-style: italic;"></span>
+                </div>
+                <div id="new_definition" class="alert alert-dismissible alert-primary" style="display: none">
+                    <button type="button" class="far fa-question-circle close" style="color:inherit"></button>
+                    <strong>New Concept!</strong>
+                    <p></p>
+                    
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                            <label class="custom-control-label" for="customCheck1">Share this concept with Unity</label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="modal-footer">
+                <button id="delete_button" type="button" class="btn btn-primary" style="display: none">Delete</button>
+                <button id="create_button" type="button" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </div>
+</div>

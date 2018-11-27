@@ -1,0 +1,151 @@
+<style>
+
+    .links line {
+        stroke: #999;
+    }
+
+    .suggestion {
+        padding: 6px 6px 6px 6px;
+        margin: 2px 2px 2px 2px;
+        cursor: pointer;
+    }
+
+    .badge-info {
+        font-size: 1em;
+    }
+
+    .circle-icon {
+        background: #ffc0c0;
+        padding: 30px;
+        border-radius: 50%;
+    }
+
+    text {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 4px;
+        cursor: default;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        fill: azure;
+    }
+
+    .tag {
+        background-color: dodgerblue;
+    }
+
+    .newlink {
+        stroke: rgb(117, 198, 255);
+        stroke-width: 1px;
+    }
+
+    .node_preview {
+        stroke: rgb(117, 198, 255);
+        fill: rgb(39, 43, 48);
+        stroke-width: 0.5px;
+    }
+
+    .popover_container {
+        width: 320px
+    }
+
+    .popover {
+        max-width: 100%; /* Max Width of the popover (depending on the container!) */
+    }
+
+    .nodes rect {
+        stroke: #fff;
+        stroke-width: 0.5px;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        vertical-align: middle;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .small-search {
+        width: 175px !important
+    }
+
+    .bootstrap-tagsinput {
+        line-height: 28px;
+    }
+
+        .bootstrap-tagsinput .tag {
+            border-radius: 3px;
+            font-size: 0.9em;
+            padding: 3px 5px 5px 5px;
+            margin-bottom: 15px;
+        }
+
+        .bootstrap-tagsinput .custom_tag {
+            background-color: #477979;
+        }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #14abf7;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #EDF7E6;
+        cursor: pointer;
+    }
+
+    .center-div {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal {
+        right: initial;
+        bottom: initial;
+        width: 1000px;
+        height: 800px;
+    }
+</style>
+<div>
+    <div id="popover_parent"></div>
+    <div id="popover-content" style="display:none">
+        <div class="card-header text-white">
+            Add Relation
+            <span id="close_popover" class="close" style="font-size:1.2em">&times;</span>
+        </div>
+
+        <div class="card-body text-white">
+            <h5 class="card-title" id="popover_title">New %CATEGORY% Relation</h5>
+            <p class="card-text" id="popover_definition">%DEFINITION%.</p>
+
+            <form class="form-inline" onsubmit="AddRelation(this); return false;">
+                <input id="new_relation" name="new_relation" class="form-control small-search input-sm" type="text" placeholder="">
+                <button data-dismiss="modal" class="btn btn-secondary input-sm" style="margin-left: 5px">Add</button>
+            </form>
+
+            <p class="card-text"></p>
+            <div id="input-tags">
+            </div>
+        </div>
+    </div>
+</div>

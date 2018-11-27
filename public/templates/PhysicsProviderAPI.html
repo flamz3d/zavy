@@ -1,0 +1,65 @@
+<fieldset>
+    <legend>Physics Property</legend>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+            <label class="custom-control-label" for="customCheck1">Affected By Gravity</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
+            <label class="custom-control-label" for="customCheck2">Collides With Objects</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck3">
+            <label class="custom-control-label" for="customCheck3">Can Locomote</label>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <fieldset>
+            <label class="control-label" for="readOnlyInput">Material</label>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Wood
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Steel</a>
+                    <a class="dropdown-item" href="#">Fabric</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Other...</a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+  
+    <div class="form-group">
+        <fieldset>
+            <label class="control-label" for="readOnlyInput">Weight and Density</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                <label class="custom-control-label" for="customRadio1">Compute From Material</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Manual</label>
+            </div>
+        </fieldset>
+        <p></p>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">kg/m<sup>3</sup></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Density">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00 kg</span>
+                </div>
+            </div>
+        </div>
+</div>
+        
+</fieldset>
+<div class="row">
+    <div class="col text-right"><button id="apply_button" type="button" class="btn btn-primary">Apply</button></div>
+</div>
+    

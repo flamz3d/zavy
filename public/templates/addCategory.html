@@ -1,0 +1,14 @@
+<div id="AddCategory-content" style="display:none">
+    <div class="card-header text-white">${node.id}
+        <span class="close" style="font-size:1.2em" onclick="hidePopover()">&times;</span>
+    </div>
+
+    <div class="card-body text-white">
+        <h5 class="card-title" id="popover_title">Select Category to Add for '${node.id}'</h5>
+        <div id="input-tags">
+            {{each categories}}
+                <span class='badge badge-info suggestion' onclick="AddCategory('${$value}'); hidePopover();">${$value}</span>
+            {{/each}}
+        </div>
+    </div>
+</div>

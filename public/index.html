@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./3rd/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./3rd/googlefont/opensanscondensed.css">
+    <link rel="stylesheet" href="./3rd/fontawesome/css/all.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./3rd/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/sidebar.css" rel="stylesheet">
+    <link href="./css/zavy.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle" style="position:absolute; left:2px; top;2px"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <div id="wrapper">
+        <!-- Sidebar -->
+    </div>
+
+<div>
+    <div id="app" class="container vertical-center" >
+        <div class="jumbotron" style="min-width:100%">
+            <h1 id="exam_phrase" class="display-3 text-center"></h1>
+            <hr class="my-4">
+            <p></p>
+            <p class="lead  text-center" style="margin-top:80px">
+                <a id="next_phrase" class="btn btn-primary btn-lg"  role="button">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="./3rd/w3color/w3color.js"></script>
+    <script src="./3rd/d3/d3.v4.min.js"></script>
+    <script src="./3rd/underscore/underscore.js"></script>
+    <script src="./3rd/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./3rd/jquery/jquery-tmpl.min.js"></script>
+    <script src="./3rd/popper/popper.min.js"></script>
+    <script src="./3rd/bootstrap/bootstrap-4.0.0.min.js"></script>
+    <script src="./3rd/typeahead/typeahead.js"></script>
+    <script src="./3rd/axios/axios.min.js"></script>
+    <script src="./3rd/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="./js/addObject.js"></script>
+    <script src="./js/areYouSure.js"></script>
+    <script src="./js/Templates.js"></script>
+    <script src="./js/ShowError.js"></script>
+    <script src="./js/Sidebar.js"></script>
+    <script src="./js/Main.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        Sidebar($("#wrapper"));
+        Main($("#app"));
+    </script>
+
+</body>
+
+</html>
