@@ -8,5 +8,8 @@
     "spellchecker": "3.5.0"
   },
   "author": "Dominic Laflamme",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+        "start": "node app.js"
+  }
 }
